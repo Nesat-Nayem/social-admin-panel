@@ -39,6 +39,7 @@ export default function NavVertical({ openNav, onCloseNav }) {
   }, [pathname]);
 
   const currentNavConfig = navConfig?.find((item) => item.role === user.role)?.values || [];
+  // const currentNavConfig = navConfig?.find((item) => item.role === 'ADMIN')?.values || [];
 
   const renderContent = (
     <Scrollbar
@@ -62,7 +63,7 @@ export default function NavVertical({ openNav, onCloseNav }) {
         }}
       >
         {/* <Logo /> */}
-        <img src={CRMLogo} alt="logo" height={60} width={180} />
+        <img src={CRMLogo} alt="logo" height={60} width={100} style={{margin:"auto"}} />  
         <NavAccount />
       </Stack>
 

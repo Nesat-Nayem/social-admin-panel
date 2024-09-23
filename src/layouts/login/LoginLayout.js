@@ -4,7 +4,7 @@ import { Typography, Stack, Box } from '@mui/material';
 // components
 import Logo from '../../components/logo';
 import Image from '../../components/image';
-import CRMLogo from '../../components/Crmlogo/logo.png';
+import CRMLogo from '../../components/Crmlogo/crm.jpeg';
 //
 import { StyledRoot, StyledSectionBg, StyledSection, StyledContent } from './styles';
 

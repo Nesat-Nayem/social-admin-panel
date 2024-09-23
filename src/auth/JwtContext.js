@@ -118,32 +118,33 @@ export function AuthProvider({ children }) {
   }, [initialize]);
 
   // LOGIN
-  const login = useCallback(async (id, password, role) => {
-    let roleBasedEndpoint = '';
-    if (role === 'VSO') {
-      roleBasedEndpoint = 'api/vso-login';
-    }
-    if (role === 'ADMIN') {
-      roleBasedEndpoint = 'api/admin-login';
-    }
-    if (role === 'MANAGER') {
-      roleBasedEndpoint = 'api/manager-login';
-    }
-    if (role === 'DOCTOR') {
-      roleBasedEndpoint = 'api/doctor-login';
-    }
+  const login = useCallback(async (email, password, role) => {
+    // let roleBasedEndpoint = '';
+    // if (role === 'VSO') {
+    //   roleBasedEndpoint = 'api/vso-login';
+    // }
+    // if (role === 'ADMIN') {
+    //   roleBasedEndpoint = 'api/auth/login';
+    // }
+    // if (role === 'MANAGER') {
+    //   roleBasedEndpoint = 'api/manager-login';
+    // }
+    // if (role === 'DOCTOR') {
+    //   roleBasedEndpoint = 'api/doctor-login';
+    // }
 
-    const response = await API.post(roleBasedEndpoint, {
-      id,
+    const response = await API.post('api/auth/login', {
+      email,
       password,
-      role,
+      // role,
     });
+    console.log("response", response)
     const {
       accessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c',
-      user,
+      data:user,
     } = response.data;
     console.log({ user });
-    user.role = role;
+    // user.role = role;
     // user.role = 'VSO';
 
     setSession(accessToken);

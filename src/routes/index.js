@@ -204,7 +204,7 @@ export default function Router() {
   };
 
   let rolePath = null;
-  if (role === 'ADMIN') {
+  if (role === 'admin') {
     rolePath = paths.ADMIN;
   } else if (role === 'VSO') {
     rolePath = paths.VSO;

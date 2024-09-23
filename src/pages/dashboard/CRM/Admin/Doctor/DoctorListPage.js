@@ -102,7 +102,8 @@ export default function DoctorListPage() {
   } = useTable();
 
   const { themeStretch } = useSettingsContext();
-  const { data, isLoading, isError: isErrorVso } = useGetMaster('doctor');
+  const { data, isLoading, isError: isErrorVso } = useGetMaster('posts');
+  console.log('data dd', data);
   const { deleteUser, isSuccess, isError } = useDeleteMaster('doctor');
 
   const _doctorList =

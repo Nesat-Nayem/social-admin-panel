@@ -1,6 +1,6 @@
 export const USER_ROLES = {
-  VSO: 'VSO',
-  MANAGER: 'MANAGER',
-  ADMIN: 'ADMIN',
-  DOCTOR: 'DOCTOR',
+  CONSULTANT: 'consultant',
+  MLA: 'mla',
+  ADMIN: 'admin',
+  HOSPITAL: 'hospital',
 };

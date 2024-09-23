@@ -58,7 +58,7 @@ export default function GeneralEcommercePage() {
                   sx={{ py: 2 }}
                 >
                   <InvoiceAnalytic
-                    title_one="Partha Sarathi Das"
+                    title_one="David Smith"
                     title_two="ID No &nbsp;:"
                     title_two_value="133"
                     title_three="Joining Date &nbsp; :"

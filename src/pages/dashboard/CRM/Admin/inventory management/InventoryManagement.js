@@ -60,12 +60,12 @@ const ROLE_OPTIONS = [
 
 const TABLE_HEAD = [
   { id: '' },
-  { id: 'vso_id', label: 'vso_id', align: 'left', minWidth: 100 },
-  { id: 'name', label: 'Name', align: 'left', minWidth: 100 },
-  { id: 'phonenumber', label: 'Phone Number', align: 'left', minWidth: 100 },
-  { id: 'address', label: 'Address', align: 'left', minWidth: 150 },
-  { id: 'sample_name', label: 'Sample Name', align: 'left', minWidth: 180 },
-  { id: 'quantity', label: 'Quantity', align: 'left', minWidth: 180 },
+  { id: '_id', label: 'ID', align: 'left', minWidth: 100 },
+  { id: 'postText', label: 'Title', align: 'left', minWidth: 100 },
+  { id: 'createdat', label: 'Post Created', align: 'left', minWidth: 100 },
+  // { id: 'address', label: 'Address', align: 'left', minWidth: 150 },
+  // { id: 'sample_name', label: 'Sample Name', align: 'left', minWidth: 180 },
+  // { id: 'quantity', label: 'Quantity', align: 'left', minWidth: 180 },
 ];
 
 export default function InventoryManagement() {
@@ -89,7 +89,10 @@ export default function InventoryManagement() {
   } = useTable();
 
   const { themeStretch } = useSettingsContext();
-  const { data, isLoading } = useGetMastersample('sample');
+  // const { data, isLoading } = useGetMastersample('posts');
+
+  const { data, isLoading, isError: isErrorVso } = useGetMaster('posts');
+  // console.log('post data dd', data);
 
   // const data = fetchData();
   // if (!data) {
@@ -97,19 +100,16 @@ export default function InventoryManagement() {
   // }
   // const data = API.get('api/sample');
 
-  console.log(data);
-  const { deleteUser, isSuccess } = useDeleteMaster('sample');
+  // console.log(data?.data);
+  const { deleteUser, isSuccess } = useDeleteMaster('posts');
 
   const _sampleList =
     (data &&
       data.map((sample) => ({
-        id: sample.id,
-        vso_id: sample.vso_id,
-        name: sample?.name,
-        phonenumber: sample?.phonenumber,
-        address: sample?.address,
-        quantity: sample?.quantity,
-        sample_name: sample?.sample?.name,
+        id: sample._id,
+        postText: sample.postText,
+        createdat: sample.createdAt,
+     
       }))) ||
     [];
 
@@ -213,27 +213,28 @@ export default function InventoryManagement() {
   return (
     <>
       <Helmet>
-        <title> Sample: List | Voiz</title>
+        <title> Post: List | Voiz</title>
       </Helmet>
 
       <Container maxWidth={themeStretch ? false : 'lg'}>
         <CustomBreadcrumbs
-          heading="Inventory Management"
+          heading="Post Management"
           links={[
             // // { name: 'Dashboard', href: PATH_DASHBOARD.vsomaster.root },
             // { name: 'User', href: PATH_DASHBOARD.vsomaster.root },
             { name: 'List' },
           ]}
-          action={
-            <Button
-              component={RouterLink}
-              to={PATH_DASHBOARD.InventoryManagement.new}
-              variant="contained"
-              startIcon={<Iconify icon="eva:plus-fill" />}
-            >
-              New
-            </Button>
-          }
+
+          // action={
+          //   <Button
+          //     component={RouterLink}
+          //     to={PATH_DASHBOARD.InventoryManagement.new}
+          //     variant="contained"
+          //     startIcon={<Iconify icon="eva:plus-fill" />}
+          //   >
+          //     New
+          //   </Button>
+          // }
         />
 
         <Card>
@@ -274,13 +275,13 @@ export default function InventoryManagement() {
                   tableData.map((row) => row.id)
                 )
               }
-              action={
-                <Tooltip title="Delete">
-                  <IconButton color="primary" onClick={handleOpenConfirm}>
-                    <Iconify icon="eva:trash-2-outline" />
-                  </IconButton>
-                </Tooltip>
-              }
+              // action={
+              //   <Tooltip title="Delete">
+              //     <IconButton color="primary" onClick={handleOpenConfirm}>
+              //       <Iconify icon="eva:trash-2-outline" />
+              //     </IconButton>
+              //   </Tooltip>
+              // }
             />
 
             <Scrollbar>

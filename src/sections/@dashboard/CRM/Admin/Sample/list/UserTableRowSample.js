@@ -17,7 +17,7 @@ UserTableRowSample.propTypes = {
   onSelectRow: PropTypes.func,
 };
 export default function UserTableRowSample({ row, selected, onEditRow, onSelectRow, onDeleteRow }) {
-  const { vso_id, name, phonenumber, address, quantity, sample_name } = row;
+  const {id,postText,createdat } = row;
 
   const [openConfirm, setOpenConfirm] = useState(false);
 
@@ -50,14 +50,14 @@ export default function UserTableRowSample({ row, selected, onEditRow, onSelectR
             <Iconify icon="eva:more-vertical-fill" />
           </IconButton>
         </TableCell>
-        <TableCell align="left">{vso_id}</TableCell>
-        <TableCell align="left">{name}</TableCell>
+        <TableCell align="left">{id}</TableCell>
+        <TableCell align="left">{postText}</TableCell>
 
         <TableCell align="left" sx={{ textTransform: 'capitalize' }}>
-          {phonenumber}
+          {createdat}
         </TableCell>
 
-        <TableCell align="left" sx={{ textTransform: 'capitalize' }}>
+        {/* <TableCell align="left" sx={{ textTransform: 'capitalize' }}>
           {address}
         </TableCell>
         <TableCell align="left" sx={{ textTransform: 'capitalize' }}>
@@ -65,7 +65,7 @@ export default function UserTableRowSample({ row, selected, onEditRow, onSelectR
         </TableCell>
         <TableCell align="left" sx={{ textTransform: 'capitalize' }}>
           {quantity}
-        </TableCell>
+        </TableCell> */}
 
         {/* <TableCell align="center">
             <Iconify
@@ -108,10 +108,10 @@ export default function UserTableRowSample({ row, selected, onEditRow, onSelectR
         </MenuItem>
 
         <MenuItem
-          onClick={() => {
-            onEditRow();
-            handleClosePopover();
-          }}
+          // onClick={() => {
+          //   onEditRow();
+          //   handleClosePopover();
+          // }}
         >
           <Iconify icon="eva:edit-fill" />
           Edit

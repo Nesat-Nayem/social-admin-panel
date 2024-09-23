@@ -36,25 +36,25 @@ const ICONS = {
   dashboard: icon('ic_dashboard'),
 };
 
-const VSONavConfig = [
+const ConsultantNavConfig = [
   {
-    subheader: 'VSO ',
+    subheader: 'Consultant ',
     items: [
-      {
-        title: 'Dashboard',
-        path: PATH_DASHBOARD.vso.vso,
-        // icon: ICONS.dashboard
-      },
-      {
-        title: 'Visit',
-        path: PATH_DASHBOARD.vso.main,
-        // icon: ICONS.ecommerce
-      },
-      {
-        title: 'Meeting',
-        path: PATH_DASHBOARD.vso.meeting,
-        // icon: ICONS.ecommerce
-      },
+      // {
+      //   title: 'Dashboard',
+      //   path: PATH_DASHBOARD.vso.vso,
+      //   // icon: ICONS.dashboard
+      // },
+      // {
+      //   title: 'Visit',
+      //   path: PATH_DASHBOARD.vso.main,
+      //   // icon: ICONS.ecommerce
+      // },
+      // {
+      //   title: 'Meeting',
+      //   path: PATH_DASHBOARD.vso.meeting,
+      //   // icon: ICONS.ecommerce
+      // },
 
       // {
       //   title: 'VSO Visit',
@@ -71,112 +71,125 @@ const AdminNavConfig = [
     items: [
       { title: 'Dashboard', path: PATH_DASHBOARD.admin.admin, icon: ICONS.dashboard },
 
-      {
-        title: 'Register Master',
-        path: PATH_DASHBOARD.vsomaster.root,
-        icon: ICONS.invoice,
-        children: [
-          { title: 'VSO', path: PATH_DASHBOARD.vsomaster.list },
-          { title: 'Manager', path: PATH_DASHBOARD.managermaster.list },
-          { title: 'Client', path: PATH_DASHBOARD.doctormaster.list },
-        ],
-      },
+      // {
+      //   title: 'Register Master',
+      //   path: PATH_DASHBOARD.vsomaster.root,
+      //   icon: ICONS.invoice,
+      //   children: [
+      //     { title: 'VSO', path: PATH_DASHBOARD.vsomaster.list },
+      //     { title: 'Manager', path: PATH_DASHBOARD.managermaster.list },
+      //     { title: 'Client', path: PATH_DASHBOARD.doctormaster.list },
+      //   ],
+      // },
 
+      // {
+      //   title: 'ecommerce',
+      //   path: PATH_DASHBOARD.eCommerce.root,
+      //   icon: ICONS.cart,
+      //   children: [
+      //     { title: 'shop', path: PATH_DASHBOARD.eCommerce.shop },
+      //     { title: 'product', path: PATH_DASHBOARD.eCommerce.demoView },
+      //     { title: 'list', path: PATH_DASHBOARD.eCommerce.list },
+      //     { title: 'create', path: PATH_DASHBOARD.eCommerce.new },
+      //     { title: 'edit', path: PATH_DASHBOARD.eCommerce.demoEdit },
+      //     { title: 'checkout', path: PATH_DASHBOARD.eCommerce.checkout },
+      //   ],
+      // },
+
+      // {
+      //   title: 'Medicine Master',
+      //   path: PATH_DASHBOARD.inventorymaster.root,
+      //   icon: ICONS.invoice,
+      //   children: [{ title: 'Medicine', path: PATH_DASHBOARD.inventorymaster.list }],
+      // },
       {
-        title: 'Medicine Master',
-        path: PATH_DASHBOARD.inventorymaster.root,
-        icon: ICONS.invoice,
-        children: [{ title: 'Medicine', path: PATH_DASHBOARD.inventorymaster.list }],
-      },
-      {
-        title: 'Inventory Management',
+        title: 'Post Management',
         path: PATH_DASHBOARD.InventoryManagement.root,
         icon: ICONS.user,
-        // children: [{ title: '', path: PATH_DASHBOARD.inventorymaster.list }],
       },
-      {
-        title: 'Cites',
-        path: PATH_DASHBOARD.Cityes.root,
-        icon: ICONS.user,
-        // children: [{ title: 'Medicine', path: PATH_DASHBOARD.inventorymaster.list }],
-      },
+      // {
+      //   title: 'Cites',
+      //   path: PATH_DASHBOARD.Cityes.root,
+      //   icon: ICONS.user,
+      // },
 
-      {
-        title: 'Sample Master',
-        path: PATH_DASHBOARD.samplemaster.root,
-        icon: ICONS.invoice,
-        children: [{ title: 'Sample', path: PATH_DASHBOARD.samplemaster.list }],
-      },
-      {
-        title: 'Vehicle Master',
-        path: PATH_DASHBOARD.admin.root,
-        icon: ICONS.invoice,
-        children: [{ title: 'Vehicle', path: PATH_DASHBOARD.vehiclemaster.list }],
-      },
+      // {
+      //   title: 'Sample Master',
+      //   path: PATH_DASHBOARD.samplemaster.root,
+      //   icon: ICONS.invoice,
+      //   children: [{ title: 'Sample', path: PATH_DASHBOARD.samplemaster.list }],
+      // },
+      // {
+      //   title: 'Vehicle Master',
+      //   path: PATH_DASHBOARD.admin.root,
+      //   icon: ICONS.invoice,
+      //   children: [{ title: 'Vehicle', path: PATH_DASHBOARD.vehiclemaster.list }],
+      // },
 
-      {
-        title: 'Meeting Master',
-        path: PATH_DASHBOARD.admin.root,
-        icon: ICONS.invoice,
-        children: [{ title: 'Meeting', path: PATH_DASHBOARD.meetingmaster.list }],
-      },
-      {
-        title: 'Gift Master',
-        path: PATH_DASHBOARD.giftmaster.root,
-        icon: ICONS.invoice,
-        children: [{ title: 'Gift', path: PATH_DASHBOARD.giftmaster.list }],
-      },
-      // { title: 'Business Report', path: PATH_DASHBOARD.businessreport.list, icon: ICONS.dashboard },
-      {
-        title: 'Business Report',
-        path: PATH_DASHBOARD.businessreport.manager,
-        icon: ICONS.invoice,
-        children: [
-          { title: 'Manager', path: PATH_DASHBOARD.businessreport.manager },
-          { title: 'Doctor', path: PATH_DASHBOARD.businessreport.doctor },
-          { title: 'Vso', path: PATH_DASHBOARD.businessreport.vso },
-          { title: 'Medicine', path: PATH_DASHBOARD.businessreport.medicine },
-          { title: 'Sample', path: PATH_DASHBOARD.businessreport.sample },
-          { title: 'Gift', path: PATH_DASHBOARD.businessreport.gift },
-          { title: 'Vso Vist', path: PATH_DASHBOARD.businessreport.vsovisit },
-          { title: 'Meeting Create', path: PATH_DASHBOARD.businessreport.createmeeting },
-          { title: 'Meeting Submit', path: PATH_DASHBOARD.businessreport.submitmeeting },
-        ],
-      },
+      // {
+      //   title: 'Meeting Master',
+      //   path: PATH_DASHBOARD.admin.root,
+      //   icon: ICONS.invoice,
+      //   children: [{ title: 'Meeting', path: PATH_DASHBOARD.meetingmaster.list }],
+      // },
+      // {
+      //   title: 'Gift Master',
+      //   path: PATH_DASHBOARD.giftmaster.root,
+      //   icon: ICONS.invoice,
+      //   children: [{ title: 'Gift', path: PATH_DASHBOARD.giftmaster.list }],
+      // },
+      // {
+      //   title: 'Business Report',
+      //   path: PATH_DASHBOARD.businessreport.manager,
+      //   icon: ICONS.invoice,
+      //   children: [
+      //     { title: 'Manager', path: PATH_DASHBOARD.businessreport.manager },
+      //     { title: 'Doctor', path: PATH_DASHBOARD.businessreport.doctor },
+      //     { title: 'Vso', path: PATH_DASHBOARD.businessreport.vso },
+      //     { title: 'Medicine', path: PATH_DASHBOARD.businessreport.medicine },
+      //     { title: 'Sample', path: PATH_DASHBOARD.businessreport.sample },
+      //     { title: 'Gift', path: PATH_DASHBOARD.businessreport.gift },
+      //     { title: 'Vso Vist', path: PATH_DASHBOARD.businessreport.vsovisit },
+      //     { title: 'Meeting Create', path: PATH_DASHBOARD.businessreport.createmeeting },
+      //     { title: 'Meeting Submit', path: PATH_DASHBOARD.businessreport.submitmeeting },
+      //   ],
+      // },
+
+
     ],
   },
 ];
 
-const DoctorNavConfig = [
+const HospitalNavConfig = [
   {
-    subheader: 'DOCTOR',
+    subheader: 'Hospital',
     items: [
       // { title: 'Doctor Dashboard', path: PATH_DASHBOARD.doctor.doctor, icon: ICONS.dashboard },
       // { title: 'Doctor Profile', path: PATH_DASHBOARD.doctor.profile, icon: ICONS.ecommerce },
 
-      {
-        title: 'Doctor Transaction Page',
-        path: PATH_DASHBOARD.doctor.transaction,
-        icon: ICONS.booking,
-      },
+      // {
+      //   title: 'Doctor Transaction Page',
+      //   path: PATH_DASHBOARD.doctor.transaction,
+      //   icon: ICONS.booking,
+      // },
     ],
   },
 ];
 
-const ManagerNavConfig = [
+const MlaNavConfig = [
   {
-    subheader: 'MANAGER',
+    subheader: 'MLA',
     items: [
-      {
-        title: 'Visit',
-        path: PATH_DASHBOARD.manager.main,
-        // icon: ICONS.ecommerce
-      },
-      {
-        title: 'Manage VSO',
-        path: PATH_DASHBOARD.manager.vsoaccess,
-        // icon: ICONS.ecommerce
-      },
+      // {
+      //   title: 'Visit',
+      //   path: PATH_DASHBOARD.manager.main,
+      //   // icon: ICONS.ecommerce
+      // },
+      // {
+      //   title: 'Manage VSO',
+      //   path: PATH_DASHBOARD.manager.vsoaccess,
+      //   // icon: ICONS.ecommerce
+      // },
       // { title: 'Manager Dashboard', path: PATH_DASHBOARD.manager.main, icon: ICONS.dashboard },
       // { title: 'Manager Profile', path: PATH_DASHBOARD.manager.profile, icon: ICONS.ecommerce },
       // {
@@ -209,16 +222,16 @@ const navConfig = [
   },
 
   {
-    role: USER_ROLES.VSO,
-    values: VSONavConfig,
+    role: USER_ROLES.CONSULTANT,
+    values: ConsultantNavConfig,
   },
   {
-    role: USER_ROLES.MANAGER,
-    values: ManagerNavConfig,
+    role: USER_ROLES.MLA,
+    values: MlaNavConfig,
   },
   {
-    role: USER_ROLES.DOCTOR,
-    values: DoctorNavConfig,
+    role: USER_ROLES.HOSPITAL,
+    values: HospitalNavConfig,
   },
 ];
 
@@ -228,53 +241,53 @@ const navConfigs = [
   {
     subheader: 'VSO ',
     items: [
-      { title: 'VSO Dashboard', path: PATH_DASHBOARD.general.app, icon: ICONS.dashboard },
-      { title: 'VSO Profile', path: PATH_DASHBOARD.general.ecommerce, icon: ICONS.ecommerce },
-      {
-        title: 'VSO Visit Entry Page',
-        path: PATH_DASHBOARD.invoice.root,
-        icon: ICONS.invoice,
-        children: [
-          { title: 'Report and Expense', path: PATH_DASHBOARD.invoice.list },
-          { title: 'Report Entry', path: PATH_DASHBOARD.invoice.demoView },
-        ],
-      },
-      { title: 'VSO  Vist Exit', path: PATH_DASHBOARD.general.booking, icon: ICONS.booking },
+      // { title: 'VSO Dashboard', path: PATH_DASHBOARD.general.app, icon: ICONS.dashboard },
+      // { title: 'VSO Profile', path: PATH_DASHBOARD.general.ecommerce, icon: ICONS.ecommerce },
+      // {
+      //   title: 'VSO Visit Entry Page',
+      //   path: PATH_DASHBOARD.invoice.root,
+      //   icon: ICONS.invoice,
+      //   children: [
+      //     { title: 'Report and Expense', path: PATH_DASHBOARD.invoice.list },
+      //     { title: 'Report Entry', path: PATH_DASHBOARD.invoice.demoView },
+      //   ],
+      // },
+      // { title: 'VSO  Vist Exit', path: PATH_DASHBOARD.general.booking, icon: ICONS.booking },
     ],
   },
 
   {
     subheader: 'VSO ',
     items: [
-      { title: 'VSO Dashboard', path: PATH_DASHBOARD.vso.vso, icon: ICONS.dashboard },
-      { title: 'VSO Profile jjddj', path: PATH_DASHBOARD.vso.profile, icon: ICONS.ecommerce },
-      { title: 'VSO Visit', path: PATH_DASHBOARD.vso.visit, icon: ICONS.ecommerce },
-      {
-        title: 'VSO Visit Entry Page',
-        path: PATH_DASHBOARD.vso.root,
-        icon: ICONS.invoice,
-        children: [
-          { title: 'Report and Expense', path: PATH_DASHBOARD.vso.reportexpense },
-          { title: 'Report Entry', path: PATH_DASHBOARD.vso.reportentry },
-        ],
-      },
-      { title: 'VSO  Vist Exit', path: PATH_DASHBOARD.vso.exit, icon: ICONS.booking },
+      // { title: 'VSO Dashboard', path: PATH_DASHBOARD.vso.vso, icon: ICONS.dashboard },
+      // { title: 'VSO Profile jjddj', path: PATH_DASHBOARD.vso.profile, icon: ICONS.ecommerce },
+      // { title: 'VSO Visit', path: PATH_DASHBOARD.vso.visit, icon: ICONS.ecommerce },
+      // {
+      //   title: 'VSO Visit Entry Page',
+      //   path: PATH_DASHBOARD.vso.root,
+      //   icon: ICONS.invoice,
+      //   children: [
+      //     { title: 'Report and Expense', path: PATH_DASHBOARD.vso.reportexpense },
+      //     { title: 'Report Entry', path: PATH_DASHBOARD.vso.reportentry },
+      //   ],
+      // },
+      // { title: 'VSO  Vist Exit', path: PATH_DASHBOARD.vso.exit, icon: ICONS.booking },
     ],
   },
 
   {
     subheader: 'MANAGER',
     items: [
-      { title: 'Manager Dashboard', path: PATH_DASHBOARD.manager.main, icon: ICONS.dashboard },
-      {
-        title: 'Manager Report & Expenses Generation',
-        path: PATH_DASHBOARD.manager.root,
-        icon: ICONS.invoice,
-        children: [
-          { title: 'Visit Report Start Km', path: PATH_DASHBOARD.manager.start },
-          { title: 'Visit Report End Km', path: PATH_DASHBOARD.manager.end },
-        ],
-      },
+      // { title: 'Manager Dashboard', path: PATH_DASHBOARD.manager.main, icon: ICONS.dashboard },
+      // {
+      //   title: 'Manager Report & Expenses Generation',
+      //   path: PATH_DASHBOARD.manager.root,
+      //   icon: ICONS.invoice,
+      //   children: [
+      //     { title: 'Visit Report Start Km', path: PATH_DASHBOARD.manager.start },
+      //     { title: 'Visit Report End Km', path: PATH_DASHBOARD.manager.end }
+      //   ],
+      // },
     ],
   },
   // GENERAL
