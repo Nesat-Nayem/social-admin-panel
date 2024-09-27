@@ -45,14 +45,17 @@ export default function Login() {
             VSO id : <strong>VSO622</strong> / Pass :<strong> 123456</strong>
           </li> */}
           <li>
-            Admin Email : <strong>admin@voiz.com</strong> / Pass :<strong> 123456</strong>
-          </li>
-          {/* <li>
-            MANAGER id : <strong>M90622</strong> / Pass :<strong> 123456</strong>
+            Admin Email : <strong>admin@admin.com</strong> / Pass :<strong> 123456</strong>
           </li>
           <li>
-            DOCTOR id : <strong>DOC624</strong> / Pass :<strong> 123456</strong>
-          </li> */}
+            MLA : <strong>mla@gmail.com</strong> / Pass :<strong> 123456</strong>
+          </li>
+          <li>
+            Hospital : <strong>hospital@gmail.com</strong> / Pass :<strong> 123456</strong>
+          </li>
+          <li>
+            Consultant : <strong>consultant@gmail.com</strong> / Pass :<strong> 123456</strong>
+          </li>
         </ul>
       </Alert>
 

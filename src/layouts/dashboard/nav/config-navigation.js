@@ -40,6 +40,11 @@ const ConsultantNavConfig = [
   {
     subheader: 'Consultant ',
     items: [
+      {
+        title: 'Post Management',
+        path: PATH_DASHBOARD.InventoryManagement.root,
+        icon: ICONS.user,
+      }
       // {
       //   title: 'Dashboard',
       //   path: PATH_DASHBOARD.vso.vso,
@@ -164,6 +169,12 @@ const HospitalNavConfig = [
   {
     subheader: 'Hospital',
     items: [
+
+      {
+        title: 'Post Management',
+        path: PATH_DASHBOARD.InventoryManagement.root,
+        icon: ICONS.user,
+      }
       // { title: 'Doctor Dashboard', path: PATH_DASHBOARD.doctor.doctor, icon: ICONS.dashboard },
       // { title: 'Doctor Profile', path: PATH_DASHBOARD.doctor.profile, icon: ICONS.ecommerce },
 
@@ -180,6 +191,13 @@ const MlaNavConfig = [
   {
     subheader: 'MLA',
     items: [
+
+      {
+        title: 'Post Management',
+        path: PATH_DASHBOARD.InventoryManagement.root,
+        icon: ICONS.user,
+      }
+
       // {
       //   title: 'Visit',
       //   path: PATH_DASHBOARD.manager.main,
