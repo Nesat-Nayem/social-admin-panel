@@ -53,7 +53,7 @@ function AdminDashboardPage() {
 
           <Grid item xs={12} md={4}>
             <AppWidgetSummary
-              title="Total Manager "
+              title="Total Social Issues "
               percent={2.6}
               total={18765}
               chart={{
@@ -65,7 +65,7 @@ function AdminDashboardPage() {
 
           <Grid item xs={12} md={4}>
             <AppWidgetSummary
-              title="Total Doctor"
+              title="Total Medical Issues"
               percent={2.6}
               total={18765}
               chart={{
@@ -77,7 +77,7 @@ function AdminDashboardPage() {
 
           <Grid item xs={12} md={4}>
             <AppWidgetSummary
-              title="Total VSO"
+              title="Total News"
               percent={2.6}
               total={18765}
               chart={{
@@ -101,7 +101,7 @@ function AdminDashboardPage() {
 
           <Grid item xs={12} md={4}>
             <AppWidgetSummary
-              title="Current Month Visit"
+              title="Public Poll"
               percent={0.2}
               total={4876}
               chart={{
@@ -113,7 +113,7 @@ function AdminDashboardPage() {
 
           <Grid item xs={12} md={4}>
             <AppWidgetSummary
-              title="Total Stock"
+              title="Voters Summary"
               percent={-0.1}
               total={678}
               chart={{
@@ -124,7 +124,7 @@ function AdminDashboardPage() {
           </Grid>
           <Grid item xs={12} md={4}>
             <AppWidgetSummary
-              title="Total Coupon Received"
+              title="Opinion Poll"
               percent={-0.1}
               total={678}
               chart={{
@@ -135,7 +135,7 @@ function AdminDashboardPage() {
           </Grid>
           <Grid item xs={12} md={4}>
             <AppWidgetSummary
-              title="Total Coupon Settled"
+              title="Road Accident"
               percent={-0.1}
               total={678}
               chart={{
@@ -146,7 +146,7 @@ function AdminDashboardPage() {
           </Grid>
           <Grid item xs={12} md={4}>
             <AppWidgetSummary
-              title="Total Incentive"
+              title="Total Hospital"
               percent={-0.1}
               total={678}
               chart={{
@@ -156,9 +156,9 @@ function AdminDashboardPage() {
             />
           </Grid>
 
-          <Grid item xs={12} md={6} lg={4}>
+          {/* <Grid item xs={12} md={6} lg={4}>
             <AppCurrentDownload
-              title="Total Product Sale"
+              title="Total MLA"
               chart={{
                 colors: [
                   theme.palette.primary.main,
@@ -174,9 +174,9 @@ function AdminDashboardPage() {
                 ],
               }}
             />
-          </Grid>
+          </Grid> */}
 
-          <Grid item xs={12} md={6} lg={8}>
+          {/* <Grid item xs={12} md={6} lg={8}>
             <AppAreaInstalled
               title="Total Area Visited"
               subheader="(+43%) than last year"
@@ -200,9 +200,9 @@ function AdminDashboardPage() {
                 ],
               }}
             />
-          </Grid>
+          </Grid> */}
 
-          <Grid item xs={12} lg={8}>
+          {/* <Grid item xs={12} lg={8}>
             <AppNewInvoice
               title="Coupon Settled"
               tableData={_appInvoices}
@@ -214,11 +214,11 @@ function AdminDashboardPage() {
                 { id: '' },
               ]}
             />
-          </Grid>
+          </Grid> */}
 
-          <Grid item xs={12} md={6} lg={4}>
+          {/* <Grid item xs={12} md={6} lg={4}>
             <AppTopRelated title="Notification" list={_appRelated} />
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
     </>

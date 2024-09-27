@@ -17,6 +17,7 @@ export default function Login() {
   const { method } = useAuthContext();
 
   return (
+
     <LoginLayout>
       <Stack spacing={2} sx={{ mb: 5, position: 'relative' }}>
         <Typography variant="h4">Sign in to Voiz</Typography>
@@ -62,5 +63,6 @@ export default function Login() {
       <AuthLoginForm />
       <AuthWithSocial />
     </LoginLayout>
+
   );
 }

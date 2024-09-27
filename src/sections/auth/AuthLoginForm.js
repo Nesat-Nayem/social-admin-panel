@@ -69,7 +69,7 @@ export default function AuthLoginForm() {
     { label: 'Admin', value: USER_ROLES.ADMIN },
     { label: 'Hospital', value: USER_ROLES.HOSPITAL },
     { label: 'MLA', value: USER_ROLES.MLA },
-    { label: 'CONSULTANT', value: USER_ROLES.CONSULTANT },
+    { label: 'Consultant', value: USER_ROLES.CONSULTANT },
   ];
 
   return (

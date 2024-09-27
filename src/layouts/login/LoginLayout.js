@@ -32,7 +32,7 @@ export default function LoginLayout({ children, illustration, title }) {
       </Box>
 
       <StyledSection>
-        <Typography variant="h3" sx={{ mb: 10, maxWidth: 480, textAlign: 'center' }}>
+        <Typography variant="h3" sx={{ mb: 10, mt:10, maxWidth: 480, textAlign: 'center' }}>
           {title || 'Hi, Welcome back'}
         </Typography>
 
@@ -48,7 +48,7 @@ export default function LoginLayout({ children, illustration, title }) {
       </StyledSection>
 
       <StyledContent>
-        <Stack sx={{ width: 1 }}> {children} </Stack>
+        <Stack sx={{ width: 1  }}> {children} </Stack>
       </StyledContent>
     </StyledRoot>
   );
